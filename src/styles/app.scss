@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(rgb(37, 36, 36), rgb(15, 15, 15));
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(230, 216, 216);
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(194, 192, 192);
+}
+
+.App {
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.library-active {
+  margin-left: 30%;
+}
+
+@import './song';
+@import './player';
+@import './library';
+@import './nav';
+@import './background';
+@import './playButton';
+@import './nextButton';
+@import './prevButton';

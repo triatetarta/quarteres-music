@@ -1,0 +1,29 @@
+.triangle {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#fa7b16, #eb5351);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.square {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(#f00, #e64467);
+  border-radius: 20%;
+}
+.circle {
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(#f00, #f0f);
+  border-radius: 50%;
+}

@@ -1,0 +1,50 @@
+.prev-btn {
+  padding: 1rem 1.5rem;
+  background-color: rgba(134, 134, 134, 0.2);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  transition: all 0.3s ease;
+
+  svg {
+    position: relative;
+    z-index: 1;
+    color: rgba(253, 249, 249, 0.5);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(253, 249, 249, 0.7);
+    }
+  }
+
+  .prev-triangle {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(
+      rgba(250, 123, 22, 0.7),
+      rgba(235, 83, 81, 0.1)
+    );
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  svg:hover ~ .prev-triangle {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev-btn {
+    padding: 0.3rem 1rem;
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+}
